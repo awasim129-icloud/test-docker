@@ -30,7 +30,6 @@ jobs:
         with:
           images: anaswasim/test-repo
       - name: Build Push to Dockerhub
-        steps:
-         - run: docker build -t anaswasim/test-repo .
-         - run: docker push anaswasim/test-repo
+        run: docker build -t anaswasim/test-repo .
+      - run: docker push anaswasim/test-repo
      
