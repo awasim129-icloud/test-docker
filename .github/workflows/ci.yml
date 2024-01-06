@@ -1,4 +1,8 @@
 name: Node.js Deployment
+on:
+  push:
+    branches:
+     - main
 
 jobs:
   test:
